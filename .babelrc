@@ -1,0 +1,22 @@
+{
+  "env": {
+    "production": {
+      "plugins": [
+        "transform-remove-console",
+        [
+          "module-resolver",
+          {
+            "root": ["./src"],
+            "extensions": [".ios.js", ".android.js", ".js", ".ts", ".tsx", ".json"],
+            "alias": {
+              "@components": "./src/Components",
+              "@constants": "./src/Constant",
+              "@containers": "./src/Containers",
+              "@navigation": "./src/navigation"
+            }
+          }
+      ]
+      ]
+    }
+  }
+}
